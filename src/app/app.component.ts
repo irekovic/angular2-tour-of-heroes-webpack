@@ -14,7 +14,8 @@ export class Hero {
   	<label>id: </label>{{hero.id}}
 	</div>
 	<div>
-		<label>name: </label>{{hero.name}}
+		<label>name: </label>
+		<input value="{{hero.name}}" placeholder="name">
 	</div>
 	`
 })
