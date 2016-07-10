@@ -4,6 +4,11 @@ import {DashboardComponent} from './dashboard.component'
 
 const routes: RouterConfig = [
 	{
+		path: '',
+		redirectTo: '/dashboard',
+		pathMatch: 'full'
+	},
+	{
 		path: 'heroes',
 		component: HeroesComponent
 	},
