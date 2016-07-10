@@ -20,6 +20,7 @@ export class Hero {
 	`
 })
 export class AppComponent { 
+	public heroes = HEROES
 	title = 'Tour of Heroes'
 	hero: Hero  = {
 		id: 1,
