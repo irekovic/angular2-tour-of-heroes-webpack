@@ -8,6 +8,11 @@ export class HeroService {
 		return this.getHeroesFast()
 	}
 
+	getHero(id: number) {
+		return this.getHeroes().then(heroes => 
+			heroes.find(hero => hero.id === id)
+		)
+	}
 	private getHeroesFast() {
 		return Promise.resolve(HEROES)
 	}
